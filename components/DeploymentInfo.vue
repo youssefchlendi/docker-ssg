@@ -1,61 +1,20 @@
 <template>
   <div class="text-gray-700 print:hidden text-center">
-    <span v-if="isProduction" class="mr-2">
-      Last deployed on {{ deployedTimestamp }} for commit
-      <a :href="commitLink">{{ commitSha }}</a>
-    </span>
-    <span v-else class="mr-2">Running locally</span>
+    <span class="mr-2">MP2L - 2024</span>
     <a
-      class="mr-2"
-      href="https://gitlab.com/nfriend/nuxt-resume/pipelines/latest"
-    >
-      <img
-        class="inline h-5 -mt-1"
-        :src="pipelineStatusUrl"
-        alt="GitLab build status"
-      />
-    </a>
-    <a
-      href="https://gitlab.com/nfriend/nuxt-resume"
+      href="https://github.com/youssefchlendi/docker-ssg"
       class="inline-flex items-center"
     >
-      View the source on GitLab
-      <Icon class="ml-1" type="gitlab" />
+      View the source on Github
+      <Icon class="ml-1" type="github" />
     </a>
   </div>
 </template>
 
 <script>
-import moment from "moment";
 import Icon from "./utility/Icon";
 
 export default {
   components: { Icon },
-  setup() {
-    const config = useRuntimeConfig();
-    console.log(config);
-    return { config };
-  },
-  data: () => ({
-    pipelineStatusUrl: "",
-  }),
-  created() {
-    this.isProduction = this.config.public.isProduction;
-    this.deployedTimestamp = moment(this.config.public.gitlabCi.timestamp)
-      .utc()
-      .format("Y/MM/DD \\a\\t HH:mm:ss z");
-    this.commitSha = this.config.public.gitlabCi.commitSha;
-    this.commitLink = `${this.config.public.gitlabCi.projectUrl}/commit/${this.commitSha}`;
-
-    // onNuxtReady(async () => {
-    //   setInterval(this.refreshPipelineStatus, 5000);
-    // })
-    this.refreshPipelineStatus();
-  },
-  methods: {
-    refreshPipelineStatus() {
-      this.pipelineStatusUrl = `https://gitlab.com/nfriend/nuxt-resume/badges/master/pipeline.svg#${Date.now()}`;
-    },
-  },
 };
 </script>

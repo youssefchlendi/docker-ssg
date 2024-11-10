@@ -78,7 +78,7 @@ const showdown = new ShowdownConverter();
 export default {
   components: { Tag, Icon },
   setup() {
-    console.log(process.env)
+    console.log(process.env);
     const { $resumeData } = useNuxtApp();
     return { resumeData: $resumeData };
   },
@@ -92,6 +92,10 @@ export default {
               title: "Experience",
               subsections: helpers.getProfessionalWorkInfo(this.resumeData),
             },
+            {
+              title: "Education",
+              subsections: helpers.getEducationInfo(this.resumeData),
+            },
           ],
         },
 
@@ -100,16 +104,8 @@ export default {
         {
           sections: [
             {
-              title: "Education",
-              subsections: helpers.getEducationInfo(this.resumeData),
-            },
-            {
               title: "Skills",
               subsections: helpers.getSkillsInfo(this.resumeData),
-            },
-            {
-              title: "Internships/Part-time",
-              subsections: helpers.getOtherWorkInfo(this.resumeData),
             },
           ],
         },
