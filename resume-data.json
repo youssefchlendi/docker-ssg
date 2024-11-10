@@ -1,0 +1,393 @@
+{
+  "basics": {
+    "name": "Nathan Friend",
+    "nameKerned": [
+      { "character": "I", "letterSpacing": "-0.08em" },
+      { "character": "Y", "letterSpacing": "-0.07em" },
+      { "character": "E", "letterSpacing": "-0.01em" },
+      { "character": "D", "letterSpacing": "-0.05em" },
+      " ",
+      { "character": "Z", "letterSpacing": "-0.06em" },
+      { "character": "I", "letterSpacing": "-0.01em" },
+      { "character": "R", "letterSpacing": "-0.05em" },
+      { "character": "I", "letterSpacing": "-0.05em" }
+    ],
+    "label": "Software Engineer",
+    "picture": "https://secure.gravatar.com/avatar/cd23f74a33fc7d8dfe081948696551a5?s=800&d=robohash",
+    "email": "hello@nathanfriend.io",
+    "website": "https://nathanfriend.io",
+    "summary": "Senior Frontend Engineer at GitLab and cellist based out of Woodstock, Ontario. Fascinated with building usable, delightful software. Remote work advocate.",
+    "location": {
+      "city": "Woodstock",
+      "countryCode": "CA",
+      "region": "ON"
+    },
+    "profiles": [
+      {
+        "network": "GitLab",
+        "username": "nfriend",
+        "url": "https://gitlab.com/nfriend"
+      },
+      {
+        "network": "GitHub",
+        "username": "nfriend",
+        "url": "https://github.com/nfriend"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "nfriend",
+        "url": "https://www.linkedin.com/in/nfriend/"
+      },
+      {
+        "network": "Stack Overflow",
+        "username": "nathan-friend",
+        "url": "https://stackoverflow.com/cv/nathanfriend"
+      },
+      {
+        "network": "Twitter",
+        "username": "NathanAFriend",
+        "url": "https://twitter.com/NathanAFriend"
+      }
+    ]
+  },
+
+  "work": [
+    {
+      "company": "Stripe",
+      "website": "https://stripe.com/",
+      "summary": "I build economic infrastructure for the internet.",
+      "highlights": ["Worked 100% remotely on the Connect team"],
+      "position": "Remote Fullstack Engineer",
+      "startDate": "2021-08-23",
+      "tags": [
+        {
+          "display": "React",
+          "website": "https://reactjs.org/"
+        },
+        {
+          "display": "Flow",
+          "website": "https://flow.org/"
+        },
+        {
+          "display": "Ruby",
+          "website": "https://www.ruby-lang.org/"
+        },
+        {
+          "display": "Rails",
+          "website": "https://rubyonrails.org/"
+        }
+      ]
+    },
+    {
+      "company": "GitLab",
+      "website": "https://about.gitlab.com",
+      "summary": "I built features that help people release software more quickly, easily, and effectively.",
+      "highlights": [
+        "Implemented high-profile features such as [Let's Encrypt integration](https://docs.gitlab.com/omnibus/settings/ssl.html#lets-encrypt-integration), [merge trains](https://docs.gitlab.com/ee/ci/merge_request_pipelines/pipelines_for_merged_results/merge_trains/), [deploy freezes](https://docs.gitlab.com/ee/user/project/releases/index.html#prevent-unintentional-releases-by-setting-a-deploy-freeze), [DORA 4 metrics](https://about.gitlab.com/releases/2021/01/22/gitlab-13-8-released/#improve-your-devops-maturity-with-deployment-frequency-metrics), and [markdown editor keyboard shortcuts](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/40328)",
+        "Pushed Release vision forward through in-depth technical and business analysis",
+        "Reviewed and guided community contributions",
+        "Maintainer of [gitlab-org/gitlab](https://gitlab.com/gitlab-org/gitlab/)",
+        "Performed technical and behavioral interviews",
+        "Worked 100% remotely"
+      ],
+      "position": "Senior Frontend Engineer",
+      "startDate": "2018-12-10",
+      "endDate": "2021-08-20",
+      "tags": [
+        {
+          "display": "Vue.js",
+          "website": "https://vuejs.org/"
+        },
+        {
+          "display": "JavaScript",
+          "website": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+          "display": "SCSS",
+          "website": "https://sass-lang.com/"
+        },
+        {
+          "display": "Haml",
+          "website": "https://github.com/haml/haml"
+        },
+        {
+          "display": "Ruby",
+          "website": "https://www.ruby-lang.org/"
+        },
+        {
+          "display": "GraphQL",
+          "website": "https://graphql.org/"
+        },
+        {
+          "display": "Go",
+          "website": "https://golang.org/"
+        }
+      ]
+    },
+    {
+      "company": "DeltaWare",
+      "website": "https://maximuscanada.ca/locations",
+      "summary": "I led efforts to rebuild legacy healthcare software as modern web applications with an emphasis on usability.",
+      "highlights": [
+        "Led AngularJS to Angular 2+ conversion",
+        "Implemented fast, intuitive searching using Solr"
+      ],
+      "position": "Project Architect",
+      "startDate": "2016-08-03",
+      "endDate": "2018-12-05",
+      "tags": [
+        {
+          "display": "Angular",
+          "website": "https://angular.io/"
+        },
+        {
+          "display": "TypeScript",
+          "website": "https://www.typescriptlang.org/"
+        },
+        {
+          "display": "Solr",
+          "website": "https://lucene.apache.org/solr/"
+        },
+        {
+          "display": "Node",
+          "website": "https://nodejs.org/"
+        },
+        {
+          "display": "ASP.NET",
+          "website": "https://www.asp.net/"
+        },
+        {
+          "display": "Oracle",
+          "website": "https://www.oracle.com/"
+        }
+      ]
+    },
+    {
+      "company": "DuPont Pioneer",
+      "website": "https://www.pioneer.com/us",
+      "summary": "I worked on a fertilizer optimization SaaS for farmers.",
+      "highlights": [
+        "Built mapping features using Leaflet and Bing Maps",
+        "Rebuilt Gulp builds to maximize developer efficiency"
+      ],
+      "position": "Software Development Specialist",
+      "startDate": "2013-05-20",
+      "endDate": "2016-07-20",
+      "tags": [
+        {
+          "display": "Angular",
+          "website": "https://angular.io/"
+        },
+        {
+          "display": "Knockout",
+          "website": "https://knockoutjs.com/"
+        },
+        {
+          "display": "TypeScript",
+          "website": "https://www.typescriptlang.org/"
+        },
+        {
+          "display": "ASP.NET",
+          "website": "https://www.asp.net/"
+        },
+        {
+          "display": "WPF",
+          "website": "https://en.wikipedia.org/wiki/Windows_Presentation_Foundation"
+        },
+        {
+          "display": "C♯",
+          "website": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+        }
+      ]
+    },
+    {
+      "company": "Visual Logic Group",
+      "website": "https://vlgux.com/",
+      "summary": "",
+      "position": "UX Development Intern",
+      "startDate": "2013-01-15",
+      "endDate": "2013-05-01",
+      "type": "internship",
+      "tags": [
+        {
+          "display": "JavaScript",
+          "website": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+          "display": "CSS",
+          "website": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        }
+      ]
+    },
+    {
+      "company": "Dordt University",
+      "website": "https://www.dordt.edu/",
+      "summary": "",
+      "position": "Web Developer",
+      "startDate": "2012-01-20",
+      "endDate": "2013-05-10",
+      "type": "parttime",
+      "tags": [
+        {
+          "display": "Perl",
+          "website": "https://www.perl.org/"
+        },
+        {
+          "display": "PHP",
+          "website": "https://www.php.net/"
+        },
+        {
+          "display": "Drupal",
+          "website": "https://www.drupal.org/"
+        }
+      ]
+    },
+    {
+      "company": "DuPont Pioneer",
+      "website": "https://www.pioneer.com/us",
+      "summary": "",
+      "position": "Software Development Intern",
+      "startDate": "2012-05-20",
+      "endDate": "2012-08-05",
+      "type": "internship",
+      "tags": [
+        {
+          "display": "JavaScript",
+          "website": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+          "display": "jQuery",
+          "website": "https://jquery.com/"
+        },
+        {
+          "display": "ASP.NET",
+          "website": "https://www.asp.net/"
+        },
+        {
+          "display": "C♯",
+          "website": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+        }
+      ]
+    },
+    {
+      "company": "SnupNow",
+      "summary": "",
+      "position": "Web Development Intern",
+      "startDate": "2011-04-15",
+      "endDate": "2011-08-05",
+      "type": "internship",
+      "tags": [
+        {
+          "display": "HTML",
+          "website": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+        },
+        {
+          "display": "CSS",
+          "website": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Iowa State University",
+      "website": "https://www.iastate.edu/",
+      "startDate": "2015-08-01",
+      "endDate": "2019-08-15",
+      "area": "Human-Computer Interaction",
+      "studyType": "Master"
+    },
+    {
+      "institution": "Dordt University",
+      "website": "https://www.dordt.edu/",
+      "startDate": "2009-08-01",
+      "endDate": "2013-05-10",
+      "area": "Computer Science",
+      "studyType": "Bachelor"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywords": [
+        {
+          "display": "JavaScript",
+          "website": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+          "display": "TypeScript",
+          "website": "https://www.typescriptlang.org/"
+        },
+        {
+          "display": "Dart",
+          "website": "https://dart.dev/"
+        },
+        {
+          "display": "C♯",
+          "website": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+        },
+        {
+          "display": "Ruby",
+          "website": "https://www.ruby-lang.org/en/"
+        },
+        {
+          "display": "SCSS",
+          "website": "https://sass-lang.com/"
+        },
+        {
+          "display": "SQL",
+          "website": "https://en.wikipedia.org/wiki/SQL"
+        }
+      ]
+    },
+    {
+      "name": "Frameworks",
+      "keywords": [
+        {
+          "display": "Vue.js",
+          "website": "https://vuejs.org/"
+        },
+        {
+          "display": "Angular",
+          "website": "https://angular.io/"
+        },
+        {
+          "display": "React",
+          "website": "https://reactjs.org/"
+        },
+        {
+          "display": "Flutter",
+          "website": "https://flutter.dev/"
+        },
+        {
+          "display": "Rails",
+          "website": "https://rubyonrails.org/"
+        },
+        {
+          "display": "ASP.NET",
+          "website": "https://www.asp.net/"
+        },
+        {
+          "display": "WPF",
+          "website": "https://en.wikipedia.org/wiki/Windows_Presentation_Foundation"
+        }
+      ]
+    },
+    {
+      "name": "Concepts",
+      "keywords": [
+        "Continuous integration/deployment (CI/CD)",
+        "Automated testing",
+        "REST/GraphQL API design",
+        "Cross-browser debugging",
+        "Responsive design",
+        "Developer workflow optimization",
+        "Single Page Applications (SPAs)",
+        "Internationalization (i18n)"
+      ]
+    }
+  ],
+  "meta": {
+    "theme": "flat"
+  }
+}

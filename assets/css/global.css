@@ -1,0 +1,81 @@
+html,
+body {
+  @apply bg-gray-200
+         font-serif
+         box-border
+         antialiased;
+
+  font-size: 12px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+a:not(.btn):not(.tag) {
+  @apply text-blue-700;
+
+  &:hover {
+    @apply underline;
+  }
+
+  &:active {
+    @apply text-blue-800;
+  }
+
+  &:visited {
+    @apply text-purple-700;
+
+    &:active {
+      @apply text-purple-800;
+    }
+  }
+}
+
+h1 {
+  @apply text-7xl
+         font-light
+         text-blue-600
+         tracking-tighter
+         leading-none
+         pb-4;
+}
+
+@media screen and (max-width: 8.5in) {
+  html,
+  body {
+    @apply bg-transparent;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    @apply text-6xl;
+  }
+}
+
+@page {
+  size: letter portrait;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    @apply bg-transparent;
+  }
+
+  h1 {
+    @apply text-black;
+  }
+
+  a:not(.btn):not(.tag) {
+    @apply text-black;
+
+    &:visited {
+      @apply text-black;
+    }
+  }
+
+  .btn {
+    @apply hidden;
+  }
+}
