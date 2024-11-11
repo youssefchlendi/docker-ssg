@@ -66,19 +66,20 @@
 </template>
 
 <script>
-import { isString } from "lodash";
+import pkgg from 'lodash';
+const { isString } = pkgg;
 import { inject } from "vue";
-import { Converter as ShowdownConverter } from "showdown";
+import pkg from 'showdown';
+const { Converter  } = pkg;
 import Tag from "./Tag";
 import Icon from "./utility/Icon";
 import * as helpers from "./content-helper";
 
-const showdown = new ShowdownConverter();
+const showdown = new Converter();
 
 export default {
   components: { Tag, Icon },
   setup() {
-    console.log(process.env);
     const { $resumeData } = useNuxtApp();
     return { resumeData: $resumeData };
   },

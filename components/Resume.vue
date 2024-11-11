@@ -28,7 +28,6 @@ export default {
   },
   setup() {
     const config = useRuntimeConfig();
-    console.log(config);
     return { config };
   },
   created() {

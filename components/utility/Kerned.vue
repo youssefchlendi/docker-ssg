@@ -10,7 +10,8 @@
 </template>
 
 <script>
-import { isObject, isString, isArray } from 'lodash';
+import pkgg from 'lodash';
+const { isObject, isString, isArray } = pkgg;
 
 const stringToLettersArray = str =>
   [...str].map(c => ({ character: c, letterSpacing: '' }));
