@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Mohamed Youssef Chlendi",
-  
+
     "label": "Development Engineer",
     "picture": "",
     "email": "youssef.chlendi@gmail.com",
@@ -106,49 +106,100 @@
     {
       "name": "Programming Languages",
       "keywords": [
-        "PHP", "JavaScript", "TypeScript", "Java", "Python", "SQL", "HTML", "CSS", "C", "C#", "Dart", "Kotlin", "PowerShell", "Shell"
+        "PHP",
+        "JavaScript",
+        "TypeScript",
+        "Java",
+        "Python",
+        "SQL",
+        "HTML",
+        "CSS",
+        "C",
+        "C#",
+        "Dart",
+        "Kotlin",
+        "PowerShell",
+        "Shell"
       ]
     },
     {
       "name": "Web Frameworks",
       "keywords": [
-        "ASP.NET", "Laravel", "Symfony", "Spring Boot", "ExpressJs", "VueJs", "Angular", "LAMP", "Bootstrap"
+        "ASP.NET",
+        "Laravel",
+        "Symfony",
+        "Spring Boot",
+        "ExpressJs",
+        "VueJs",
+        "Angular",
+        "LAMP",
+        "Bootstrap"
       ]
     },
     {
       "name": "Mobile & Desktop Frameworks",
       "keywords": [
-        "Flutter", "MAUI", "WPF", "UWP", "XAML", "Ionic", "Capacitor", "Electron", "Xamarin"
+        "Flutter",
+        "MAUI",
+        "WPF",
+        "UWP",
+        "XAML",
+        "Ionic",
+        "Capacitor",
+        "Electron",
+        "Xamarin"
       ]
     },
     {
       "name": "Tools & Technologies",
       "keywords": [
-        "GIT", "POSTMAN", "GitHub", "ZenHub", "Azure DevOps", "Firebase", "Figma", "Adobe Illustrator", "Jest", "StoryBook", "Digital Signature", "Cryptography", "Extension Development", "Docker"
+        "GIT",
+        "POSTMAN",
+        "GitHub",
+        "ZenHub",
+        "Azure DevOps",
+        "Firebase",
+        "Figma",
+        "Adobe Illustrator",
+        "Jest",
+        "StoryBook",
+        "Digital Signature",
+        "Cryptography",
+        "Extension Development",
+        "Docker"
       ]
     },
     {
       "name": "Databases",
       "keywords": [
-        "MySQL", "MongoDB", "SQL Server", "SQLite", "Firebase", "Oracle"
+        "MySQL",
+        "MongoDB",
+        "SQL Server",
+        "SQLite",
+        "Firebase",
+        "Oracle"
       ]
     },
     {
       "name": "Operating Systems",
-      "keywords": [
-        "Linux (Debian)", "Windows", "MacOS"
-      ]
+      "keywords": ["Linux (Debian)", "Windows", "MacOS"]
     },
     {
       "name": "Methodologies",
-      "keywords": [
-        "Scrum", "Agile", "Kanban"
-      ]
+      "keywords": ["Scrum", "Agile", "Kanban"]
     },
     {
       "name": "Soft Skills",
       "keywords": [
-        "Leadership", "Time Management", "Teamwork", "Communication", "Problem Solving", "Decision Making", "Adaptability", "Innovation", "Research"
+        "Leadership",
+        "Time Management",
+        "Teamwork",
+        "Communication",
+        "Problem Solving",
+        "Decision Making",
+        "Adaptability",
+        "Innovation",
+        "Research"
       ]
     }
   ]
