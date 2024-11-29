@@ -1,0 +1,24 @@
+services:
+  dev:
+    build:
+      dockerfile: Dockerfile.dev
+    volumes:
+      - /app/node_modules
+      - .:/app
+    ports:
+      - "8000:3000"
+
+  build:
+    build:
+      dockerfile: Dockerfile.build
+    volumes:
+      - /app/node_modules
+      - .:/app
+
+  run:
+    build:
+      dockerfile: Dockerfile.run
+    volumes:
+      - .:/app
+    ports:
+      - "88:3000"

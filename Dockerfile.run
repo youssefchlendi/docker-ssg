@@ -1,0 +1,19 @@
+FROM node:18-alpine
+
+
+WORKDIR /app
+
+COPY package*.json ./
+
+EXPOSE 3000
+
+CMD  if [ ! -d "/app/output" ] || [ -z "$(ls -A /app/output)" ]; then \
+  echo "Output folder not found, running build..."; \
+  npm install && npm run build && \
+  cp -r .output /app/output && \
+  rm -rf .output && rm -rf .nuxt; \
+  else \
+  echo "Output folder already exists, skipping build."; \
+  fi && \
+  node /app/output/.output/server/index.mjs
+
