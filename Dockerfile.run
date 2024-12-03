@@ -1,19 +1,7 @@
 FROM node:18-alpine
 
-
 WORKDIR /app
-
-COPY package*.json ./
-
-RUN npm install
 
 EXPOSE 3000
 
-CMD  if [ ! -d "/app/output" ] || [ -z "$(ls -A /app/output)" ]; then \
-  echo "Output folder is empty or does not exist, building..."; \
-  npm run build && cp -r .output /app/output && rm -rf .output && rm -rf .nuxt \
-  else \
-  echo "Output folder already exists, skipping build."; \
-  fi && \
-  node /app/output/server/index.mjs
-
+CMD node /app/output/server/index.mjs

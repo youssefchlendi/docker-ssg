@@ -1,75 +1,53 @@
-# Nuxt Minimal Starter
+# SSG + Docker
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This project was developed using nuxt to generate a static site and docker to containerize the application.
 
-## Setup
+## How to run the project
 
-Make sure to install dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Before running the project, we need to build all the necessary images. To do this, run the following command:
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+docker-compose build
+# OR
+docker compose build
 ```
 
-## Production
+After building the images, we can :
 
-Build the application for production:
+### 1. Run the project in development mode
+
+To run the project in development mode, run the following command:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+docker-compose up dev
+# OR
+docker compose up dev
 ```
 
-Locally preview production build:
+With this command, the application will be available at http://localhost:8000 and the changes made in the code will be automatically updated (hot reload).
+
+### 2. Build the project
+
+To build the project, run the following command:
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+docker-compose up build
+# OR
+docker compose up build
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+With this command, the application will be built and the static files will be available in the `output` folder.
+
+### 3. Run the project in production mode
+
+To run the project in production mode, run the following command:
+
+```bash
+docker-compose up run
+# OR
+docker compose up run
+```
+
+this command will run the built application in production mode, making it available at http://localhost:88.
+
+> Alternatively, i created Dockerfile.runAndBuild, this initally checks if the application has already been built (there's a folder called `output` in the root of the project). If the folder exists, the application will be available at http://localhost:88 and the static files will be served. If the folder doesn't exist, the application will be built and then served.
