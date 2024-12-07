@@ -49,5 +49,3 @@ docker compose up run
 ```
 
 this command will run the built application in production mode, making it available at http://localhost:88.
-
-> Alternatively, i created Dockerfile.runAndBuild, this initally checks if the application has already been built (there's a folder called `output` in the root of the project). If the folder exists, the application will be available at http://localhost:88 and the static files will be served. If the folder doesn't exist, the application will be built and then served.

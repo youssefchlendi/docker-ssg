@@ -18,7 +18,5 @@ services:
   run:
     build:
       dockerfile: Dockerfile.run
-    volumes:
-      - .:/app
     ports:
       - "88:3000"

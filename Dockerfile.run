@@ -1,7 +1,25 @@
+# Stage 1: Build Stage
+FROM node:18-alpine AS builder
+
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+RUN npm run build
+
+RUN cp -r .output /app/output && rm -rf .output .nuxt
+
+# Stage 2: Runtime Stage
 FROM node:18-alpine
 
 WORKDIR /app
 
 EXPOSE 3000
 
-CMD node /app/output/server/index.mjs
+COPY --from=builder /app/output /app/output
+
+CMD ["node", "/app/output/server/index.mjs"]

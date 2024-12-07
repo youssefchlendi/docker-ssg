@@ -1,11 +1,11 @@
-FROM node:18-alpine AS builder
+FROM node:18-alpine
 
 WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install
+RUN npm install --production
 
 COPY . .
 
-CMD npm run build && cp -r .output /app/output && rm -rf .output && rm -rf .nuxt
+CMD ["sh", "-c", "npm run build && cp -r .output /app/output && rm -rf .output .nuxt && echo 'Build complete!'"]
